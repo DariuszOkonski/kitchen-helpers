@@ -13,7 +13,18 @@ public class KitchenHelper extends Employee {
     public KitchenHelper(String name, SimpleDateFormat birthDate, BigDecimal salary) {
         super(name, birthDate, salary);
         setIngredients();
+
+        // TODO: to remove
+//        System.out.println(ingredients);
+    }
+
+    public void showIngredients() {
+        System.out.println("Ingredients");
         System.out.println(ingredients);
+    }
+
+    public HashMap<Ingredients, Integer> getIngredients() {
+        return ingredients;
     }
 
     private void setIngredients() {
