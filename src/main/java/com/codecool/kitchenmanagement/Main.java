@@ -7,14 +7,16 @@ import java.util.Date;
 public class Main {
     public static void main(String[] args) {
 
-        var chef = new Chef("chef", new SimpleDateFormat("1980-01-20"), new BigDecimal(10000));
+//        var chef = new Chef("chef", new SimpleDateFormat("1980-01-20"), new BigDecimal(10000));
+//
+//        System.out.println(chef.getName());
+//        System.out.println(chef.getSalary());
+//        System.out.println(chef.getBirthDate());
+//        chef.printTax();
 
-        System.out.println(chef.getName());
-        System.out.println(chef.getSalary());
-        System.out.println(chef.getBirthDate());
-        chef.printTax();
+        var kitchenHelper = new KitchenHelper("kitchenHelper", new SimpleDateFormat("1980-01-20"), new BigDecimal(1200));
 
-
+        System.out.println(kitchenHelper);
     }
 }
 
