@@ -9,6 +9,8 @@ public class Kitchen {
     private Chef chef;
     private final List<KitchenHelper> kitchenHelpers = new ArrayList<>();
 
+//    TODO: task 5, 6, 7
+
     public Kitchen() {
         this.chef = new Chef("Chef", new SimpleDateFormat("1989-02-14"), new BigDecimal(12000));
 
