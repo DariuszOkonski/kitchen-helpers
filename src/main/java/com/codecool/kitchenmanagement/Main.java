@@ -1,10 +1,20 @@
 package com.codecool.kitchenmanagement;
 
+import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Ramsay: WHAT ARE YOU?");
-        System.out.println("Kitchen helper: An idiot sandwich.");
-		System.out.println("Ramsay: IDIOT SANDWICH WHAT?");
-		System.out.println("Kitchen helper: An idiot sandwich, chef Ramsay.");
+
+        var chef = new Chef("chef", new SimpleDateFormat("1980-01-20"), new BigDecimal(10000));
+
+        System.out.println(chef.getName());
+        System.out.println(chef.getSalary());
+        System.out.println(chef.getBirthDate());
+        chef.printTax();
+
+
     }
 }
+
